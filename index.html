@@ -1,0 +1,115 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    -->
+<title>Election Result Predictor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body bgcolor="rgb(204, 255, 255)">
+
+<div id="header">
+<h2 align="center">Election Analytics</h2>
+</div>
+<ul>
+   <li><a>Home</a></li>
+   <li><a>How to Cast</a></li>
+   <li><a>Analytics Services</a></li>
+   <li><a>Contact</a></li>
+</ul> 
+<br><br><br>
+<div id="cont">
+<center>
+<h2>Cast your Vote Here!</h2>
+<p id="p1">Elections are a hot topic nowadays , so this website predicts the results midway before the elections are over and also helps in conducting elections online.</p>
+</div>
+</center>
+
+<center>
+<div id="d1" align="center">
+<form id="f1" method="post" action="cast_vote" name="form" onsubmit="myfunction()">
+<p class="input" >Full Name:</p>
+<input type ="text" id="name" name="name" required>
+<p class="input" name="age">Age:</p><br>
+<input type="number" id="age" name="age" required>
+<p class="input" name="aadhar">Enter your Aadhar Number</p><br>
+<input type ="text" id="aadhar" name="aadhar" required>
+<p class="input" name="gender" >Gender:</p>
+<input type="radio" name="gender" value="male" name="male"> Male
+<input type="radio" name="gender" value="female" name="female"> Female
+<input type="radio" name="gender" value="other" name="other"> Other  
+<p class="input" >Select your Region </p>
+
+
+<select name="search_categories" id="search_categories">
+
+<option value="">Select State</option>
+<option value="Andaman and Nicobar Islands" name="region">Andaman and Nicobar Islands</option>
+<option value="Andhra Pradesh" name="region">Andhra Pradesh</option>
+<option value="Arunachal Pradesh" name="region">Arunachal Pradesh</option>
+<option value="Assam" name="region">Assam</option>
+<option value="Bihar" name="region">Bihar</option>
+<option value="Chandigarh" name="region">Chandigarh</option>
+<option value="Chhattisgarh" name="region">Chhattisgarh</option>
+<option value="Dadra and Nagar Haveli" name="region">Dadra and Nagar Haveli</option>
+<option value="Daman and Diu" name="region">Daman and Diu</option>
+<option value="Delhi" name="region">Delhi</option>
+<option value="Goa" name="region">Goa</option>
+<option value="Gujarat" name="region">Gujarat</option>
+<option value="Haryana" name="region">Haryana</option>
+<option value="Himachal Pradesh" name="region">Himachal Pradesh</option>
+<option value="Jammu and Kashmir" name="region">Jammu and Kashmir</option>
+<option value="Jharkhand" name="region">Jharkhand</option>
+<option value="Karnataka" name="region">Karnataka</option>
+<option value="Kerala" name="region">Kerala</option>
+<option value="Lakshadweep" name="region">Lakshadweep</option>
+<option value="Madhya Pradesh" name="region">Madhya Pradesh</option>
+<option value="Maharashtra" name="region">Maharashtra</option>
+<option value="Manipur" name="region">Manipur</option>
+<option value="Meghalaya" name="region">Meghalaya</option>
+<option value="Mizoram" name="region">Mizoram</option>
+<option value="Nagaland" name="region">Nagaland</option>
+<option value="Orissa" name="region">Orissa</option>
+<option value="Pondicherry" name="region">Pondicherry</option>
+<option value="Punjab" name="region">Punjab</option>
+<option value="Rajasthan" name="region">Rajasthan</option>
+<option value="Sikkim" name="region">Sikkim</option>
+<option value="Tamil Nadu" name="region">Tamil Nadu</option>
+<option value="Tripura" name="region">Tripura</option>
+<option value="Uttarakhand" name="region">Uttarakhand</option>
+<option value="Uttar Pradesh" name="region">Uttar Pradesh</option>
+<option value="West Bengal" name="region">West Bengal</option>
+
+
+</select><br>
+<p class="input">Select Your Candidate</p>
+<img src="/images/bjp.png" class="img" alt="Cinque Terre"></img>
+<img src="/images/congress.png" class="img" alt="Cinque Terre"></img>
+<img src="/images/aap.jpg" class="img" alt="Cinque Terre"></img>
+<img src="/images/bsp.png" class="img" alt="Cinque Terre"></img>
+<br>
+
+<input type="radio"  class="candid" name="candidate" value="BJP"> BJP
+<input type="radio" class="candid" name="candidate" value="Congress"> Congress
+<input type="radio" class="candid" name="candidate" value="AAP"> AAP
+<input type="radio" class="candid" name="candidate" value="BSP">BSP 
+<br><br>
+
+<button id="button" value="Cast Vote" onclick="index.html">Submit</button>
+</form>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Designed By :Akash Tripathi</p>
+<br>
+<p>For Any Queries or suggestion write to www.akashtripathi14@gmail.com</p>
+  </footer>
+</body>
+</html>
+
+
+

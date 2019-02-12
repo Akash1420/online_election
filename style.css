@@ -1,0 +1,160 @@
+body
+{
+   
+   background:url('/images/cover.png');
+   background-repeat:no-repeat;
+   background-color:rgb(204, 255, 255);
+   
+   
+}
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	position:relative;
+	
+}
+ul li
+{
+	float: left;
+	width: 372px;
+	height: 40px;
+	background-color: black;
+	opacity: 0.8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	
+}
+ul li a
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+ul li a:hover
+{
+	background-color:yellow;
+	color:black;
+	border:2px;
+	border-color:red;
+}
+h2
+{
+	font-size:28px;
+	text-shadow:2px;
+}
+	
+	
+#d1
+{
+	
+	border-style:inset;
+	background-color:rgb(255, 255, 204);
+	display:block;
+	opacity:0.9;
+	padding:10px;
+	width:1000px;
+	height:700px;
+	border-radius:8px;
+	margin:5px;
+	
+}
+.input
+{
+	font-size:18px;
+	font-family:Arial;
+	color:red;
+}
+#cont
+{
+	background-color:rgb(0,200,0);
+	opacity:0.9;
+	padding:10px;
+	margin-bottom:30px;
+	color:black;
+	border-width:3px 3px 5px 5px;
+	border-color:gray;
+	box-shadow:0 0 10px white;
+	border-radius:6px;
+}
+img
+{
+	height:60px;
+	width:60px;
+	padding:20px;
+	max-width:100%;
+	
+}
+.candid
+{
+	padding:20px;
+	margin-right:30px;
+	margin-left:30px
+}
+
+#button {
+  background-color: #f44336; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:10px;
+  box-shadow:2px 2px green;
+}
+div:hover
+{
+	box-shadow:0 0 60px rgb(0, 153, 51);
+	
+}
+.img:hover
+{
+	box-shadow:0 0 5px red;
+	height:64px;
+	width:64px;
+	
+}
+footer
+ {
+      
+	  border:2px gray;
+	  box-shadow:0 0 5px black;
+	  background-color:rgb(255, 0, 102);
+      color: white;
+      padding: 2px;
+	  margin:1px;
+    }
+#p1
+{
+	font-size:18px;
+	font-family:Arial;
+	padding:4px;
+	margin:10px;
+}
+#header
+{
+	height:70px;
+	width:100%;
+	background-color:red;
+	margin-bottom:2px;
+	padding:10px;
+	position:relative;
+	
+}
+#side
+{
+	height:90%;
+	width:200px;
+	background-color:#c2cfff;
+	
+}
+input
+    {
+        border: 0;
+        border-bottom: 1px solid blue;
+        outline: 0;
+    }

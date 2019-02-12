@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Gmail Registration Page</title>
+<style>
+div{
+    position: fixed;
+    bottom:100px ;
+    right: 400px;
+    width: 760px;
+	height: 550px;
+    
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding:15px;
+	margin:0px;
+	
+}
+input
+    {
+        border: 0;
+        border-bottom: 1px solid blue;
+        outline: 0;
+    }
+img{
+   width:120px;
+   height:70px;
+}   
+.acc{
+position:fixed;
+bottom:130px;
+right:420px;
+width:300px;
+height:500px;
+}
+#submit{
+height:50px;
+width:100px;
+background-color:rgb(153, 153, 255);
+right:500px;
+border-radius:10px;
+}
+#submit:hover
+{backgroung-color:rgb(0, 0, 102);
+}
+</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="gstyle.css">
+<br><br><br><br><br><br>
+<div id="main">
+<img src="google.jpg" ></img>
+<h2>Create your Google Account</h2>
+<h3>To continue to gmail.</h3><br><br>
+<img src="account.svg" class="acc" align="right">
+<form action="check1.html" method="post" name="f" onSubmit="return verify()">
+<input type="text" placeholder="First Name" id="fn">&emsp;&emsp;
+<input type="text" placeholder="Last Name" id="ln">
+<h5 id="p1" style="color:red" style="float:left"></h5>
+<h5 id="p2" style="color:red"></h5><br>
+<input type="text" placeholder="Username" id="un">@gmail.com</input>
+<h5 id="p3" style="color:red"></h5><br>
+You can use letters,numbers and periods.
+<p id="p8">Use my current email instead.</p>
+<br>
+<input type="password" placeholder="Password" id="pswrd">
+<input type="password" placeholder="Confirm Password" id="cpswrd">
+<h5 id="p4" style="color:red" style="float=left"></h5>
+<h5 id="p5" style="color:red"></h5>
+Use 8 or more characters with the mix of alphabets,numbers or letters.
+<br><br>
+<input type="submit" value="Next" id="submit"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<p style="display:inline">Designed By Akash Tripathi</p>
+</form>
+</div>
+<script>
+	function verify()
+	{
+	var fn=document.f.fn.value;
+	var ln=document.f.ln.value;
+	var un=document.f.un.value;
+	var pw=document.f.pswrd.value;
+	var cpw=document.f.cpswrd.value;
+	if(fn==""){
+	document.getElementById('p1').innerHTML="Enter First Name";
+	document.f.fn.focus();
+	return false;
+	}
+	if(ln=="")
+	{
+	document.getElementById('p2').innerHTML="Enter Last Name";
+	document.f.ln.focus();
+	return false;
+	}
+	if(un=="")
+	{
+	document.getElementById('p3').innerHTML="Enter UserName";
+	document.f.un.focus();
+	return false;
+	}
+	if(pw=="")
+	{
+	document.getElementById('p4').innerHTML="Enter Password";
+	document.f.pw.focus();
+	return false;
+	}
+	if(cpw=="")
+	{
+	document.getElementById('p5').innerHTML="Enter Password Again";
+	document.f.cpw.focus();
+	return false;
+	}
+	if(cpw!=pw)
+	{
+	 document.getElementById('p5').innerHTML="Passwords Don't Match";
+	
+	}
+	if(pw.length()<8)
+	{
+	document.getElementById('p4').innerHTML="Password length should be atleast 8 characters";
+	}
+	if(typeof fn != 'string' typeof ln != 'string')
+	{
+	window.alert('Name should contain alphabets only');
+	}
+}
+</script>
+</body>
+</html>
+
+
+
+
